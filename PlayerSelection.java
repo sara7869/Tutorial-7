@@ -48,5 +48,16 @@ public class PlayerSelection {
           }else{
              System.out.println("invalid entry");
           }
+        public displayTwoBestPlayers(){
+                   
+        }
+        
+        public displayTwoBestBowlers(){
+        
+        }
+        public displayBestKeeper(){
+        
+        }
+        
 
 }
