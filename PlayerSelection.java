@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class PlayerSelection {
 
@@ -17,5 +17,25 @@ public class PlayerSelection {
             PlayerArrayList.add(player4);
             PlayerArrayList.add(player5);
 
-        }
+           Scanner input=new Scanner(System.in);
+           System.out.println("A- add a player");
+           System.out.println("V- view all player");
+
+           public void addplayer(){
+                System.out.println("Enter name");
+                String name= input.next();
+                System.out.println("Enter age");
+                int age= input.nextInt();
+                System.out.println("Enter type");
+                String type= input.next();
+                System.out.println("Enter total score");
+                int name= input.next();
+                System.out.println("Enter highest score");
+                String highest= input.next();
+                Player newplayer= new Player(name,age,type,total,highest);
+            }
+           public void viewplayer(){
+                  System.out.println(PlayerArrayList);
+            } 
+
 }
