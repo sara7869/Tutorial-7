@@ -20,8 +20,11 @@ public class PlayerSelection {
            Scanner input=new Scanner(System.in);
            System.out.println("A- add a player");
            System.out.println("V- view all player");
+           System.out.println("B- display two best batmans");
+           System.out.println("C- display two best bowlers");
+           System.out.println("D- display two best keepers");
            System.out.println("Enter the option here: ");
-           char option=input.nextline();
+           String option=input.nextLine();
         
            public void addplayer(){
                 System.out.println("Enter name");
@@ -40,14 +43,6 @@ public class PlayerSelection {
                   System.out.println(PlayerArrayList);
             } 
            
-          if (option="A") {
-             addplayer();
-          }
-          else if(option="V") {
-             viewplayer();
-          }else{
-             System.out.println("invalid entry");
-          }
         public displayTwoBestPlayers(){
                    
         }
@@ -59,5 +54,12 @@ public class PlayerSelection {
         
         }
         
-
+        if (option="A") {
+             addplayer();
+          }
+          else if(option="V") {
+             viewplayer();
+          }else {
+             System.out.println("invalid entry");
+          }
 }
