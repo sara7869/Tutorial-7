@@ -20,7 +20,9 @@ public class PlayerSelection {
            Scanner input=new Scanner(System.in);
            System.out.println("A- add a player");
            System.out.println("V- view all player");
-
+           System.out.println("Enter the option here: ");
+           char option=input.nextline();
+        
            public void addplayer(){
                 System.out.println("Enter name");
                 String name= input.next();
@@ -37,5 +39,14 @@ public class PlayerSelection {
            public void viewplayer(){
                   System.out.println(PlayerArrayList);
             } 
+           
+          if (option="A") {
+             addplayer();
+          }
+          else if(option="V") {
+             viewplayer();
+          }else{
+             System.out.println("invalid entry");
+          }
 
 }
